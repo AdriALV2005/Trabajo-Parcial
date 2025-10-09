@@ -30,3 +30,4 @@ def crear_producto():
 
     inventario[nombre] = {"cantidad": cantidad, "precio": precio}
     print(f"Producto '{nombre}' agregado correctamente.")
+crear_producto()
