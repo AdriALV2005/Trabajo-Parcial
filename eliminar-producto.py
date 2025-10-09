@@ -13,3 +13,4 @@ def eliminar_producto():
             print("Operación cancelada. El producto no fue eliminado.")
     else:
         print(f"El producto '{nombre}' no existe en el inventario.")
+eliminar_producto()
