@@ -1,13 +1,10 @@
 # Inventario de productos (nombre: [cantidad, precio])
-inventario = {
-    "Manzanas": [10, 1.5],
-    "Peras": [5, 2.0],
-    "Plátanos": [8, 1.2],
-    "Naranjas": [12, 1.8]
-}
+inventario = {}
+
+# Función para mostrar el inventario
 
 
-def READ():
+def listado_inventario():
     print("=== Inventario ===")
     valor_total = 0
 
@@ -25,5 +22,4 @@ def READ():
 
 # Ejecutar la función
 if __name__ == "__main__":
-    READ()
-READ()
+    listado_inventario()
