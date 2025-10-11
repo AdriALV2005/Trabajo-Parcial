@@ -21,7 +21,7 @@ def pausar():
 
 def main():
     while True:  # inicia el bucle hasta que le des opción 5
-        limpiar()            # ← limpia la pantalla antes de dibujar el menú
+        limpiar()            # limpia la pantalla antes de dibujar el menú
         mostrar_menu()
         opcion = input("Opción (1-5): ").strip()
 
