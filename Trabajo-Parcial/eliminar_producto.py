@@ -1,5 +1,4 @@
 from inventario_global import inventario
-inventario = {}
 
 
 def eliminar_producto():
