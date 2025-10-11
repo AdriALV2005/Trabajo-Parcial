@@ -1,4 +1,5 @@
 inventario = {}
+from inventario_global import inventario
 
 
 def editar_producto():
@@ -74,4 +75,3 @@ def editar_producto():
         print("Opción inválida.")
 
 
-editar_producto()

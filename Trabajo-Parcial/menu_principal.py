@@ -3,6 +3,7 @@ from crear_producto import crear_producto
 from listado_inventario import listado_inventario
 from editar_producto import editar_producto as actualizar_producto
 from eliminar_producto import eliminar_producto
+from inventario_global import cargar_inventario, guardar_inventario
 
 
 def limpiar():
@@ -24,22 +25,30 @@ def pausar():
 
 
 def main():
+    cargar_inventario()
     while True:  # inicia el bucle hasta que le des opción 5
         limpiar()            # limpia la pantalla antes de dibujar el menú
         mostrar_menu()
         opcion = input("Opción (1-5): ").strip()
 
         if opcion == "1":
+            limpiar()
             crear_producto()            # variable michael
+            guardar_inventario()
             pausar()
         elif opcion == "2":
+            limpiar()
             listado_inventario()        # variable sergio
             pausar()
         elif opcion == "3":
+            limpiar()
             actualizar_producto()       # variable adri
+            guardar_inventario()
             pausar()
         elif opcion == "4":
+            limpiar()
             eliminar_producto()         # variable michael
+            guardar_inventario()
             pausar()
         elif opcion == "5":
             print("¡Hasta luego!")

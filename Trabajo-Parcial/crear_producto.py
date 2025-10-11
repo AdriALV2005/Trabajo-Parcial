@@ -1,6 +1,7 @@
 inventario = {}
 
 
+from inventario_global import inventario
 def crear_producto():
     print("----- Registrar nuevo producto -----")
     nombre = input("Nombre del producto: ").strip().title()
@@ -31,4 +32,3 @@ def crear_producto():
 
     inventario[nombre] = {"cantidad": cantidad, "precio": precio}
     print(f"Producto '{nombre}' agregado correctamente.")
-crear_producto()
