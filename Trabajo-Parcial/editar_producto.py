@@ -27,7 +27,7 @@ def editar_producto():
                     print("La cantidad no puede ser negativa.")
                     continue
                 inventario[nombre]['cantidad'] = nueva_cantidad
-                print(f"Cantidad actualizada correctamente.")
+                print("Cantidad actualizada correctamente.")
                 break
             except ValueError:
                 print("Ingrese un número entero válido.")
@@ -40,7 +40,7 @@ def editar_producto():
                     print("El precio no puede ser negativo.")
                     continue
                 inventario[nombre]['precio'] = nuevo_precio
-                print(f"Precio actualizado correctamente.")
+                print("Precio actualizado correctamente.")
                 break
             except ValueError:
                 print("Ingrese un valor numérico válido.")

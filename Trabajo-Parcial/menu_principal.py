@@ -1,7 +1,7 @@
 import os  # para limpiar la pantalla despues de usar alguna opcion del menu principal
 from crear_producto import crear_producto
 from listado_inventario import listado_inventario
-from actualizar_producto import actualizar_producto
+from editar_producto import editar_producto as actualizar_producto
 from eliminar_producto import eliminar_producto
 
 
